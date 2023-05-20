@@ -1,6 +1,7 @@
-<ul>
+<ul class="second-level">
   <li [routerLink]="['/activities/activity1']">ACTIVITY 1</li>
-  <li [routerLink]="['/activities/activity2']">ACTIVITY 2</li>
-  <li [routerLink]="['/activities/activity3']">ACTIVITY 3</li>
+  <li [routerLink]="['/activities', { outlets: { follow: ['activity2'] } }]">ACTIVITY 2</li>
+  <li [routerLink]="['/activities', { outlets: { follow: ['activity3'] } }]">ACTIVITY 3</li>
 </ul>
 <router-outlet></router-outlet>
+<router-outlet name="follow"></router-outlet>

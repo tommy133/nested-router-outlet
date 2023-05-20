@@ -28,8 +28,8 @@ const routes: Routes = [
           { path: 'activity12', component: Activity12Component },
         ],
       },
-      { path: 'activity2', component: Activity2Component },
-      { path: 'activity3', component: Activity3Component },
+      { path: 'activity2', component: Activity2Component, outlet: "follow" },
+      { path: 'activity3', component: Activity3Component, outlet: "follow" },
     ],
   },
 ];
